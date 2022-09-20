@@ -1,13 +1,14 @@
 # Accuracy Calculator
 
 ## Description of Application
-This Java application is built only for the assignment of "CS7700 Intro of Data Science" in Brooklyn College.
+This Java application is built to calculate actual value and accuracy of data included(hw3.data1.csv) as direction of the assignment of "CS7700 Intro of Data Science" in Brooklyn College.
 If you want to use this app for other data, please prepare csv data with following format
 
 | column1 | column2 | ... | label |
 |---------|---------|-----|-------|
-| Integer | Integer | ... | Actual values(1 or -1) |
+| Integer | Integer | ... | Predicted values(1 or -1) |
 | ... | ...| ...| ...|
+
 ## Assignment Detail
 Thinking of a linear model from dataset, we come up with
 ```
