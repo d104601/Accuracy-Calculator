@@ -45,10 +45,10 @@ public class main {
                 }
             }
 
-            System.out.println("TP is " + TP);
-            System.out.println("TN is " + TN);
-            System.out.println("FP is " + FP);
-            System.out.println("FN is " + FN);
+            System.out.println("TP: " + TP);
+            System.out.println("TN: " + TN);
+            System.out.println("FP: " + FP);
+            System.out.println("FN: " + FN);
 
             float Accuracy = (float)(TP + TN) / (float)(TP + FN + FP + TN);
 
