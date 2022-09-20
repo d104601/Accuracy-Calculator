@@ -6,7 +6,7 @@ If you want to use this app for other data, please prepare csv data with followi
 
 | column1 | column2 | ... | label |
 |---------|---------|-----|-------|
-| Integer | Integer | ... | Actual values(1 or -1) |
+| Integer | Integer | ... | Predicted values(1 or -1) |
 | ... | ...| ...| ...|
 ## Assignment Detail
 Thinking of a linear model from dataset, we come up with
