@@ -19,8 +19,9 @@ public class main {
             int FP = 0;
             int FN = 0;
 
-            // formula for y
-            int[] formula = new int[] {24, -15, -38, -7, -41, 35, 0, -2, 19, 33, -3, 7, 3, -47, 26, 10, 40, -1, 3, 0};
+            // Linear model for y
+            int[] model = new int[] {24, -15, -38, -7, -41, 35, 0, -2, 19, 33, -3, 7, 3, -47, 26, 10, 40, -1, 3, 0};
+            int constant = -1000;
 
             List<Integer> dataLine;
             int y = 0;
@@ -28,18 +29,18 @@ public class main {
             for(int i = 0; i < file.size(); i++) {
                 y = 0;
                 dataLine = file.get(i);
-                for(int j = 0; j < formula.length; j++) {
-                    y += dataLine.get(j) * formula[j];
+                for(int j = 0; j < model.length; j++) {
+                    y += dataLine.get(j) * model[j];
                 }
-                y -= 6;
+                y -= constant;
                 if(y > 0) {
                     if(dataLine.get(dataLine.size()-1) == 1)
                         TP++;
                     else
-                        FN++;
+                        FP++;
                 } else {
                     if(dataLine.get(dataLine.size()-1) == 1)
-                        FP++;
+                        FN++;
                     else
                         TN++;
                 }
